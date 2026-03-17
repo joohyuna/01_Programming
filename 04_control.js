@@ -226,3 +226,46 @@ for (var i= 1; i <= 10; i++) {
 
 
 
+// 2026년 03월 17일 문제
+// 문제 1. 1부터 20 사이 숫자중 홀수만 출력하세요
+for (var i = 1; i <= 20; i++) {
+    if (i % 2 === 1) {
+        console.log(i);
+    }
+}
+
+// 문제 2. 구구단 중 3단을 출력하세요
+for(var i = 3; i <=3; i++) {
+    for(var j = 2; j <=9; j++) {
+        console.log(`${i} * ${j} = ${i * j}`);
+    }
+}
+
+// 문제 3. 1부터 100까지 중 짝수의 합을 구하세요
+var sum = 0;
+for (var i = 1; i <= 100; i++) {
+    if(i % 2 === 0) {
+        sum = sum + i;
+    }
+}
+console.log(sum);
+
+
+
+// 문제 4. var str = "Javascript"를 역순으로 출력하세요
+var str = "JavaScript";
+var result = " ";
+for(var i = str.length -1; i >=0; i--) { // 0부터 쓰면 = 은 보통 빠진다
+  result = result + str[i];
+}
+console.log(result); // 갯수 31
+
+// 문제 5. 1부터 100까지의 숫자중 4의 배수가 몇개인지 구하세요
+var count = 0;
+for(var i = 1; i <= 100; i++) {
+    if(i % 4 === 0) {
+        count++; // count = count +1;
+    }
+}
+console.log(count);
+
