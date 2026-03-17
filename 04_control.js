@@ -177,25 +177,34 @@ for (var i = 2; i <= 9; i++) {
 // 01. 문제
 // 1부터 20까지의 숫자를 출력하되, 3의 배수일 때에만 숫자 대신 "짝"이라는 글자를 출력하기
 console.log("----- 01. 문제 -----");
-/* for (var k = 1; k <= 20; k++) {
+for (var i = 1; i <= 20; i++) {
     // 짝수 일때
-    if(k % 3 == 0) {
+    if(i % 3 === 0) {
        console.log("짝");
-   }
-    console.log(k);
-} */
+   } else {
+        console.log(i);
+    }
+}
 
 
 // 02. 문제
 // 1부터 100까지 숫자를 반복 실행하다, 합계가 500이 넘는 순간, 그 숫자가 옃인지 출력하고 반복문 종료
-
+var sum = 0;
+console.log("--- 02. 문제 ---");
+for(var i = 1; i <= 100; i++) {
+    sum = sum + i;
+    if (sum >= 500) {
+        console.log(sum);
+        break;
+    }
+}
 
 // 03. 거꾸로
 // 10부터 1까지 거꾸로 숫자를 출력하는데 짝수일 때만 숫자를 출력하기
-console.lgo("--- 03. 문제 ---");
+console.log("--- 03. 문제 ---");
 for (var i = 10; i >= 1; i--) {
     // 짝수 일때
-    if(i % 2 == 0) {
+    if(i % 2 === 0) {
         console.log(i);
     }
 }
@@ -209,7 +218,7 @@ for (var i= 1; i <= 10; i++) {
         continue; // 해당 사이트에서만 종료
         // break는 그것을 만나면 더이상 안한다.
     }
-    console.log(i + "출력");
+    console.log(i);
 }
 
 // 05. string으로 된 글자에서 특정 단어를 제회하고 출력
