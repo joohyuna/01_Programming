@@ -221,8 +221,21 @@ for (var i= 1; i <= 10; i++) {
     console.log(i);
 }
 
-// 05. string으로 된 글자에서 특정 단어를 제회하고 출력
+// 05.
+// 05. string으로 된 글자에서 특정 단어를 제외하고 출력
 // var text = JavaScript is powerful and fun!"; 이라는 text에서 "o"흫 제외하고 출력
+console.log("--- 05. 문제 ---");
+var text = "Javascript is powerful and fun!";
+var result = 0; // "o"픞 만났을 때 갯수 카운팅을 할 변수
+
+// text 라고 하는 변수는 string 타입이고, 그변수에서 .length를 사용하면 전체 자릿수가 나옴
+for (var i = 0; i < text.length; i++) { // 0부터 쓰면 = 은 보통 빠진다
+    if (text[i]  === "o") {
+        result = result + 1;
+    }
+}
+console.log(text.length); // 갯수 31
+console.log(result);
 
 
 
