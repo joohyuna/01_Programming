@@ -39,7 +39,7 @@ function add(a, b) {
 }
 var result = add(1, 2);   // return 3이 되니간, result에 3가 들어감
 
-// 표현식으로 함수 정의, var sayHi가 중식밍 되어, 변수 호이스팀만 일어남
+// 표현식으로 함수 정의, var sayHi가 중심이  되어, 변수 호이스팀만 일어남
 var sayHi = function () {
     console.log("안녕하세요!");
 }
@@ -72,5 +72,5 @@ function workoutCoach(count) {
 }
 workoutCoach(2);
 workoutCoach(1);
-workoutCoach();  // 에러가 나오는것
+workoutCoach( "s");  // 에러가 나오는것
 
