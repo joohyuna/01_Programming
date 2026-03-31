@@ -70,14 +70,14 @@ function add(x, y) {
 }
 
 b.forEach((eee) => {
-        console.log(eee)
+        console.log(eee);
 })
 
 // 요소의 합계를 구하는 예제
 const prices = [1500, 3000, 500, 2000];
 let sum = 0;
 for (let i = 0; i < prices.length; i++) {
-    // 각 용소의 합을 저장
+    // 각 됴소의 합을 저장
     sum = sum + prices[i];
 }
 // i = 0 => 부모가 갖고 있는 sum = 0 => 0 + prices[0] = 1500 => 부모가 갖고 있는 sum을 1500으로 바꿈
